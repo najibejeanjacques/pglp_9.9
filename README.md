@@ -74,3 +74,7 @@ Puis on crée les différents objets qu'on pourra manipuler:
               children.remove(graph);
             }
       }
+
+   3) Rendons les formes et les groupes persistants en utilisant le pattern DAO et JDBC:
+   
+   
