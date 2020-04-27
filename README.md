@@ -55,8 +55,8 @@ Puis on crée les différents objets qu'on pourra manipuler:
    2) Representons la notions de groupe de formes en appliquant le pattern composite:     
    On implemente une classe qui pourra ajouter plusieurs élements a une composition:
    
-        public class graphiqueComposite implements graphique
-        {
+            public class graphiqueComposite implements graphique
+            {
             private Colection children;
             
             public graphiqueComposite()
@@ -73,7 +73,7 @@ Puis on crée les différents objets qu'on pourra manipuler:
             {
               children.remove(graph);
             }
-         }
+            }
 
    3) Rendons les formes et les groupes persistants en utilisant le pattern DAO et JDBC:
    
