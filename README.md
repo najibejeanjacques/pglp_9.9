@@ -1,6 +1,8 @@
 # pglp_9.9
 
-Logiciel de dessin est un projet en java mettant en place les pattern design en oeuvre et se limittant a afficher la descriptions des figures crées
+![Test Image 4](https://github.com/tograh/testrepository/3DTest.png)
+
+Logiciel de dessin développé en java mettant en oeuvre les design patter, et se limittant a afficher la descriptions des figures crées.
 
 ## Exemple d'utilisation
 
