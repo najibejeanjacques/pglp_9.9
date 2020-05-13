@@ -1,6 +1,6 @@
 # pglp_9.9
 
-![Test Image 4](https://github.com/tograh/testrepository/3DTest.png)
+![Test Image 4](https://i.pinimg.com/originals/23/08/42/230842a0618d5cc92b9c5c94e56f682c.jpg)
 
 Logiciel de dessin développé en java mettant en oeuvre les design patter, et se limittant a afficher la descriptions des figures crées.
 
