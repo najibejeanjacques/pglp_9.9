@@ -1,9 +1,5 @@
 # pglp_9.9
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 Logiciel de dessin est un projet en java mettant en place les pattern design en oeuvre et se limittant a afficher la descriptions des figures crées
 
 ## Exemple d'utilisation
