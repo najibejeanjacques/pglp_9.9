@@ -31,6 +31,19 @@ Pour déplacer un élément graphique il faut utiliser la commande move pour cel
       
       move(triangle1, (4, 6))
      
+## Créer un groupe d'éléments graphique
+
+Pour créer un ensemble d'éléments graphique utiliser la syntaxe suivant:
+
+      Nom_Group_Element = group( liste des éléments graphiques )
+      
+Exemple de création d'un ensemble:
+
+      groupeCercle = group( cercle1, cercle2, cercle3)
+      
+      groupeCarre = group( carre1, carre2, carre3)
+      
+      groupeTriangle = group( triangle1, triangle2)
 
 ## Contibution
 
