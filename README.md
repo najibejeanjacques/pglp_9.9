@@ -44,13 +44,24 @@ Exemple de création d'un ensemble:
       groupeCarre = group( carre1, carre2, carre3)
       
       groupeTriangle = group( triangle1, triangle2)
+      
+ Notez bien, que pour un groupe d'éléments, les éléments qui compose ce groupe doivent etre du même type d'élément graphique
+      
+ ## Déplacer un groupe d'élément
+ 
+ Pour créer un groupe d'élément, utiliser la syntaxe suivante:
+ 
+      move(Nom_du_group, (a, b))
+      
+ Le 1er argument étant le nom du groupe, le 2ème élément étant le point qui servira a déplacer l'élément graphique concerné,
+ avec a et b étant des entiers.
 
 ## Contibution
 
 1. Cloner le projet (https://github.com/uvsq21921901/pglp_9.9)
-2. Créer votre branche (`git checkout -b feature/fooBar`)
+2. Créer votre branche (`git checkout -b feature/Ajout`)
 3. Commiter les changements (`git commit -am 'Add some fooBar'`)
-4. Pusher les cha,gements dans votre branche (`git push origin feature/fooBar`)
+4. Pusher les cha,gements dans votre branche (`git push origin feature/Ajout`)
 5. Créer un nouveau Pull Request
 
 <!-- Markdown link & img dfn's -->
