@@ -45,7 +45,8 @@ Exemple de création d'un ensemble:
       
       groupeTriangle = group( triangle1, triangle2)
       
- Notez bien, que pour un groupe d'éléments, les éléments qui compose ce groupe doivent etre du même type d'élément graphique
+ Notez bien, que pour un groupe d'éléments, les éléments qui compose ce groupe doivent etre du même type d'élément graphique,
+ mais nous pouvons en plus créer des groupes d'éléments avec des éléments graphique de différent type.
       
  ## Déplacer un groupe d'élément
  
