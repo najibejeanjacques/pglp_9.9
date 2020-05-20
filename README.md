@@ -37,7 +37,7 @@ Pour créer un ensemble d'éléments graphique utiliser la syntaxe suivant:
 
       Nom_Group_Element = group( liste des éléments graphiques )
       
-Exemple de création d'un ensemble:
+Exemple de création d'un ensemble d'éléments:
 
       groupeCercle = group( cercle1, cercle2, cercle3)
       
@@ -50,7 +50,7 @@ Exemple de création d'un ensemble:
       
  ## Déplacer un groupe d'élément
  
- Pour créer un groupe d'élément, utiliser la syntaxe suivante:
+ Pour déplacer un groupe d'élément, utiliser la syntaxe suivante:
  
       move(Nom_du_group, (a, b))
       
