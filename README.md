@@ -11,7 +11,7 @@ Sous la racine du projet, nous avons la base de données derby, et pour y accede
 a l'aide d'un terminal utiliser la commande ij tout en étant dans la racine du projet:
 
       #ij
-      #CONNECT 'jdbc:derby:Personnels;user=jacques;password=Bonsoire2017';
+      #CONNECT 'jdbc:derby:dessindb;user=jacques;password=Bonsoire2017';
 
 ## Exemple d'utilisation
 
