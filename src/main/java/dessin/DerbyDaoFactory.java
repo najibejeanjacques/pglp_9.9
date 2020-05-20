@@ -13,8 +13,7 @@ public class DerbyDaoFactory extends DAOFactory {
 	 * @return La connection a la base de données
 	 * @throws SQLException
 	 */
-	public static Connection createConnection() throws SQLException
-	{
+	public static Connection createConnection() throws SQLException {
 		Connection conn = DriverManager.getConnection(DBURL);
 		return conn;
 

@@ -10,26 +10,23 @@ public class Interpreter {
 
 	/****
 	 * Enregistrer une commande
-	 * @param nom Le nom de la commande a enregistrer
+	 * 
+	 * @param nom     Le nom de la commande a enregistrer
 	 * @param command La commande a enregistrer
 	 */
-	public void register(String nom,Command command)
-	{
+	public void register(String nom, Command command) {
 		mapCommand.put(nom, command);
 	}
 
 	/***
 	 * Execution de la commande
+	 * 
 	 * @param command La commande a executer
 	 */
-	public void execute(Command command)
-	{
-		if(command == null)
-		{
-			throw new IllegalStateException(command+" N'est pas une commande valide ");
-		}
-		else
-		{
+	public void execute(Command command) {
+		if (command == null) {
+			throw new IllegalStateException(command + " N'est pas une commande valide ");
+		} else {
 			command.execute();
 		}
 	}

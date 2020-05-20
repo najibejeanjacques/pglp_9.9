@@ -32,12 +32,12 @@ public class Cercle implements Graphique {
 
 	/**
 	 * Constructeur de la classe Cercle
+	 * 
 	 * @param centre1 coordonnées 1 du centre du cercle
 	 * @param centre2 coordonnées 2 du centre du cercle
-	 * @param rayon Rayon du cercle
+	 * @param rayon   Rayon du cercle
 	 */
-	public Cercle(Point pointa, int rayon,String nom)
-	{
+	public Cercle(Point pointa, int rayon, String nom) {
 		this.point = pointa;
 		this.rayon = rayon;
 		this.nom = nom;
@@ -48,7 +48,8 @@ public class Cercle implements Graphique {
 	 */
 	public void getDecription() {
 		// TODO Auto-generated method stub
-		System.out.println(this.nom+" = "+"Cercle (centre=("+this.point.getX()+","+this.point.getY()+"), rayon = "+this.rayon+")");
+		System.out.println(this.nom + " = " + "Cercle (centre=(" + this.point.getX() + "," + this.point.getY()
+				+ "), rayon = " + this.rayon + ")");
 
 	}
 

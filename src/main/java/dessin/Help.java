@@ -22,10 +22,10 @@ public class Help implements Command {
 				+ "* 3) Pour créer un ensemble d'élément graphique utiliser la commande suivant:															*\n"
 				+ "*	Exemple: groupeCercle = group( c1, c1)																								*\n"
 				+ "* Il faut préciser le nom du groupe, puis la liste des éléments graphiques qui constitueront le groupe.									*\n"
-				+ "* 4) Pour déplacer un élément graphique utiliser la commande suivante:																	*\n"		
+				+ "* 4) Pour déplacer un élément graphique utiliser la commande suivante:																	*\n"
 				+ "*	Exemple: move(groupeCercle, (3, 5))																									*\n"
 				+ "*Avec comme argument N°1 le nom du groupe , et le 2ème argument le point qui servira a déplacer le groupe délément						*\n"
-				+ "******************************************************************************************************************************************\n";		
+				+ "******************************************************************************************************************************************\n";
 		System.out.println(message);
 	}
 

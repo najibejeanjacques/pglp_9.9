@@ -13,7 +13,10 @@ public class Rectangle implements Graphique {
 	 */
 	public void getDecription() {
 		// TODO Auto-generated method stub
-		System.out.println(this.nom+" = "+"Rectangle (coordonnées=(("+this.point1.getX()+","+this.point1.getY()+"),("+this.point2.getX()+","+this.point2.getX()+"),("+this.point3.getX()+","+this.point3.getY()+"),("+this.point4.getX()+","+this.point4.getY()+"))");
+		System.out
+				.println(this.nom + " = " + "Rectangle (coordonnées=((" + this.point1.getX() + "," + this.point1.getY()
+						+ "),(" + this.point2.getX() + "," + this.point2.getX() + "),(" + this.point3.getX() + ","
+						+ this.point3.getY() + "),(" + this.point4.getX() + "," + this.point4.getY() + "))");
 	}
 
 	/***
@@ -56,8 +59,7 @@ public class Rectangle implements Graphique {
 		return nom;
 	}
 
-	public Rectangle(Point pointA, Point pointB, Point pointC, Point pointD, String nom)
-	{
+	public Rectangle(Point pointA, Point pointB, Point pointC, Point pointD, String nom) {
 		this.point1 = pointA;
 		this.point2 = pointB;
 		this.point3 = pointC;

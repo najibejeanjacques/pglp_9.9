@@ -1,6 +1,6 @@
 package dessin;
 
-public class Triangle implements Graphique{
+public class Triangle implements Graphique {
 
 	private Point point1;
 	private Point point2;
@@ -12,18 +12,20 @@ public class Triangle implements Graphique{
 	 */
 	public void getDecription() {
 		// TODO Auto-generated method stub
-		System.out.println(this.nom+" = "+"Triangle (coordonnées=(("+this.point1.getX()+","+this.point1.getY()+"),("+this.point2.getX()+","+this.point2.getY()+"),("+this.point3.getX()+","+this.point3.getY()+"))");
+		System.out.println(this.nom + " = " + "Triangle (coordonnées=((" + this.point1.getX() + "," + this.point1.getY()
+				+ "),(" + this.point2.getX() + "," + this.point2.getY() + "),(" + this.point3.getX() + ","
+				+ this.point3.getY() + "))");
 	}
 
 	/***
 	 * Création d'un nouveau triangle
+	 * 
 	 * @param pointA Le 1er point du Triangle
 	 * @param pointB Le 2eme point du Triangle
 	 * @param pointC Le 3eme point du Triangle
-	 * @param nom Le nom du triangle
+	 * @param nom    Le nom du triangle
 	 */
-	public Triangle(Point pointA, Point pointB, Point pointC,String nom)
-	{
+	public Triangle(Point pointA, Point pointB, Point pointC, String nom) {
 		this.point1 = pointA;
 		this.point2 = pointB;
 		this.point3 = pointC;

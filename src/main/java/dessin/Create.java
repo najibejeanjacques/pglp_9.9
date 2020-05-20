@@ -5,26 +5,26 @@ import java.util.Stack;
 
 public class Create implements Command {
 
-	private  static List<String> graphique;
+	private static List<String> graphique;
 
 	/**
 	 * Initialisation de la commande create avec les paramètres de l'élément a créer
+	 * 
 	 * @param list liste des paramètres de l'élément graphique
 	 */
-	public static void init(List<String> list)
-	{
+	public static void init(List<String> list) {
 		graphique = list;
 	}
+
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
 		String typeGraphique = graphique.get(1).toLowerCase();
 		DerbyDaoFactory derby = new DerbyDaoFactory();
-		switch (typeGraphique) 
-		{
+		switch (typeGraphique) {
 		case "cercle":
 			Point pointA = new Point(Integer.parseInt(graphique.get(2)), Integer.parseInt(graphique.get(3)));
-			Cercle cercle = new Cercle(pointA, Integer.parseInt(graphique.get(4)),graphique.get(0));
+			Cercle cercle = new Cercle(pointA, Integer.parseInt(graphique.get(4)), graphique.get(0));
 			derby.getCercleleDAO().insertCustomer(cercle);
 			DrawingTUI.printDessin(cercle);
 			break;
@@ -49,13 +49,17 @@ public class Create implements Command {
 			DrawingTUI.printDessin(rectangle);
 			break;
 
-		default:
+		case "triangle":
 			Point point111 = new Point(Integer.parseInt(graphique.get(2)), Integer.parseInt(graphique.get(3)));
 			Point point211 = new Point(Integer.parseInt(graphique.get(4)), Integer.parseInt(graphique.get(5)));
 			Point point311 = new Point(Integer.parseInt(graphique.get(6)), Integer.parseInt(graphique.get(7)));
-			Triangle triangle = new Triangle(point111, point211, point311,  graphique.get(0));
+			Triangle triangle = new Triangle(point111, point211, point311, graphique.get(0));
 			derby.getTriangleeDAO().insertCustomer(triangle);
 			DrawingTUI.printDessin(triangle);
+			break;
+
+		default:
+			System.out.println("Pas de graphique correspondant");
 			break;
 		}
 
