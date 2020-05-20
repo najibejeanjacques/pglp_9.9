@@ -56,6 +56,24 @@ Exemple de création d'un ensemble:
       
  Le 1er argument étant le nom du groupe, le 2ème élément étant le point qui servira a déplacer l'élément graphique concerné,
  avec a et b étant des entiers.
+ 
+ ## Afficher un élément graphique
+ 
+ Pour afficher un élément graphique, c'est a dire la description de cet élement graphique alors utiliser la commande suivante
+ 
+      affiche( nomGraphique)
+      
+Il faut préciser le nom du graphique comme argument de la conction affiche. 
+Exemple:
+
+                 affiche( c1)
+                 affiche(triangle3)
+                 
+ ## Avoir un guide d'utilisation
+ 
+ Pour avoir un guide d'utilisation de l'application, au lancement de l'application veuiller utiliser la commande help comme ci-dessous:
+ 
+                  help
 
 ## Contibution
 
