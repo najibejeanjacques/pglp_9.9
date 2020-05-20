@@ -10,31 +10,30 @@ import dessin.DictionnaireRegex;
 public class TestTriangle {
 
 	DictionnaireRegex dico;
-	String triangle,triangle1;
-	
+	String triangle, triangle1;
+
 	@Before
-	public void init()
-	{
+	public void init() {
 		triangle = "tri1 = Triangle((3, 7), (3, 7), (3, 7), (3, 7))";
 		triangle1 = "tri2 = Triangle((3, 7), (3, 7), (3, 7), (3, 7),(3, 7))";
 	}
-	
+
 	@Test
 	public void triangleTest() {
 		System.out.println("Vérification d'un triangle #########");
-		if(dico.textMacthing(triangle)) {
+		if (dico.textMacthing(triangle)) {
 			dico.separationSaisie(triangle);
-		}else {
+		} else {
 			fail("Erreur de syntaxe ");
 		}
 	}
-	
+
 	@Test
 	public void triangleTest1() {
 		System.out.println("Vérification d'un triangle #########");
-		if(dico.textMacthing(triangle1)) {
+		if (dico.textMacthing(triangle1)) {
 			dico.separationSaisie(triangle1);
-		}else {
+		} else {
 			System.out.println("Erreur de syntaxe ");
 		}
 	}
