@@ -4,6 +4,15 @@
 
 Logiciel de dessin développé en java mettant en oeuvre les design patter, et se limittant a afficher la descriptions des figures crées.
 
+
+## SGBD Derby
+
+Sous la racine du projet, nous avons la base de données derby, et pour y acceder utiliser la commande suivante:
+a l'aide d'un terminal utiliser la commande ij tout en étant dans la racine du projet:
+
+      #ij
+      #CONNECT 'jdbc:derby:Personnels;user=jacques;password=Bonsoire2017';
+
 ## Exemple d'utilisation
 
 Pour créer un élément graphique (cercle, carré, rectangle ou un triangle) il faut utliser la commande suivante:
