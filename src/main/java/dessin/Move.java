@@ -6,7 +6,7 @@ import javax.sound.midi.Soundbank;
 
 public class Move implements Command {
 
-	public static List<String> list;
+	protected static List<String> list;
 
 	/****
 	 * Initialisation de la commande move avec les paramètres de l'élément a

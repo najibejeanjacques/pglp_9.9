@@ -16,8 +16,7 @@ public class DrawingTUI {
 	private Group group = new Group();
 	private Help help = new Help();
 	private Affiche affiche = new Affiche();
-	public static Interpreter interpreteur = new Interpreter();
-	protected Stack<Command> history;
+	public final static Interpreter interpreteur = new Interpreter();
 	private DrawingApp drawingApp;
 
 	/****
@@ -31,7 +30,6 @@ public class DrawingTUI {
 		interpreteur.register("help", help);
 		interpreteur.register("affiche", affiche);
 		drawingApp = DrawingApp.ENVIRONNEMENT;
-		history = new Stack<Command>();
 	}
 
 	/**

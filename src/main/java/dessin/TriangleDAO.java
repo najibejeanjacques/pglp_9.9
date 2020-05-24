@@ -5,11 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 public class TriangleDAO implements CustomDAO<Triangle> {
 
 	/***
 	 * Inserer un triangle dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public int insertCustomer(Triangle t) {
 		// TODO Auto-generated method stub
@@ -44,6 +47,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/*****
 	 * Supprimer un triangle de la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public boolean deleteCustomer(Triangle t) {
 		// TODO Auto-generated method stub
@@ -53,6 +57,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/*****
 	 * Mettre a jour un triangle dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void updateCustomer(Triangle t) {
 		// TODO Auto-generated method stub
@@ -86,6 +91,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/***
 	 * Retrouver tous les triangles de la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void findAllCustomer() {
 		// TODO Auto-generated method stub
@@ -127,6 +133,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/***
 	 * TRouver un triangle dans la base de données a travers son nom
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public Triangle finfByName(String name) {
 		// TODO Auto-generated method stub
@@ -160,8 +167,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 				}
 				connect.commit();
 			} finally {
-				if (prepare != null)
-					prepare.close();
+				prepare.close();
 				connect.close();
 			}
 		} catch (SQLException e) {
@@ -174,6 +180,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/***
 	 * Déplacer un triangle
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void move(Triangle triangle, int a, int b) {
 		// TODO Auto-generated method stub

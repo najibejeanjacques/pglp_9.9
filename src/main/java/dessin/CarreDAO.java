@@ -5,11 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 public class CarreDAO implements CustomDAO<Carre> {
 
 	/**
 	 * Inserer un carre dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public int insertCustomer(Carre t) {
 		// TODO Auto-generated method stub
@@ -46,6 +49,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/***
 	 * Supprimer un Carré de la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public boolean deleteCustomer(Carre t) {
 		// TODO Auto-generated method stub
@@ -55,6 +59,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/***
 	 * Mettre a jour un Carre dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void updateCustomer(Carre t) {
 		// TODO Auto-generated method stub
@@ -87,6 +92,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/****
 	 * Retourner tous les carre de la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void findAllCustomer() {
 		// TODO Auto-generated method stub
@@ -130,6 +136,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/**
 	 * Retrouver un carre par son nom dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public Carre finfByName(String name) {
 		// TODO Auto-generated method stub
@@ -177,6 +184,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/****
 	 * Déplacer un carre
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void move(Carre carre, int a, int b) {
 		// TODO Auto-generated method stub

@@ -6,12 +6,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import dessin.DerbyDaoFactory;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 public class CercleDAO implements CustomDAO<Cercle> {
 
 	/***
 	 * Insertion d'un cercle dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public int insertCustomer(Cercle t) {
 		// TODO Auto-generated method stub
 		int result = 0;
@@ -41,6 +43,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 	/****
 	 * Suppression d'un cercle dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public boolean deleteCustomer(Cercle t) {
 		// TODO Auto-generated method stub
 		return false;
@@ -49,6 +52,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 	/***
 	 * Mise a jour d'un cercle dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public void updateCustomer(Cercle t) {
 		int result = 0;
 		DerbyDaoFactory derby = new DerbyDaoFactory();
@@ -74,6 +78,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 	/****
 	 * Retrouver tous les cercles dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public void findAllCustomer() {
 		// TODO Auto-generated method stub
 		DerbyDaoFactory derby = new DerbyDaoFactory();
@@ -106,6 +111,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 
 	}
 
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public Cercle finfByName(String name) {
 		// TODO Auto-generated method stub
@@ -141,6 +147,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 		return cercle;
 	}
 
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void move(Cercle cercle, int a, int b) {
 		// TODO Auto-generated method stub

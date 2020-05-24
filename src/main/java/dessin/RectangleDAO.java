@@ -5,11 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 public class RectangleDAO implements CustomDAO<Rectangle> {
 
 	/*****
 	 * Insertion d'un rectangle dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public int insertCustomer(Rectangle t) {
 		// TODO Auto-generated method stub
@@ -46,6 +49,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/*****
 	 * Supprimer un rectangle dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public boolean deleteCustomer(Rectangle t) {
 		// TODO Auto-generated method stub
@@ -55,6 +59,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/****
 	 * Mettre a jour un cercle dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void updateCustomer(Rectangle t) {
 		// TODO Auto-generated method stub
@@ -90,6 +95,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/***
 	 * Retrouver tous les rectangles dans la base de données
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public void findAllCustomer() {
 		// TODO Auto-generated method stub
 		DerbyDaoFactory derby = new DerbyDaoFactory();
@@ -131,6 +137,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/****
 	 * Trouver un rectangle a travers son nom
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public Rectangle finfByName(String name) {
 		// TODO Auto-generated method stub
@@ -178,6 +185,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/****
 	 * Deplacer un rectangle
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void move(Rectangle rectangle, int a, int b) {
 		// TODO Auto-generated method stub

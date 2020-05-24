@@ -2,6 +2,8 @@ package dessin;
 
 import java.util.List;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 public enum DrawingApp {
 	ENVIRONNEMENT;
 
@@ -10,6 +12,7 @@ public enum DrawingApp {
 	 * 
 	 * @param saisie commande saisie
 	 */
+	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public void run(String saisie) {
 		DictionnaireRegex dico = new DictionnaireRegex();
 		List<String> val;
