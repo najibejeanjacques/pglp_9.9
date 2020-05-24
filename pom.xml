@@ -16,9 +16,15 @@
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs</artifactId>
       <version>4.0.1</version>
-    </dependency> 		
-  </dependencies>
- 
+</dependency> 	
+
+ <dependency>
+  <groupId>com.google.code.findbugs</groupId>
+  <artifactId>annotations</artifactId>
+  <version>3.0.0</version>
+  <scope>provided</scope>
+  </dependency>	
+</dependencies>
   
   <build>
         <plugins>
