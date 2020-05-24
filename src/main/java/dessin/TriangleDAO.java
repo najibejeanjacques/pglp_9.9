@@ -12,6 +12,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/***
 	 * Inserer un triangle dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public int insertCustomer(Triangle t) {
@@ -47,6 +48,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/*****
 	 * Supprimer un triangle de la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public boolean deleteCustomer(Triangle t) {
@@ -57,6 +59,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/*****
 	 * Mettre a jour un triangle dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void updateCustomer(Triangle t) {
@@ -91,6 +94,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/***
 	 * Retrouver tous les triangles de la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void findAllCustomer() {
@@ -133,6 +137,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/***
 	 * TRouver un triangle dans la base de données a travers son nom
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public Triangle finfByName(String name) {
@@ -180,6 +185,7 @@ public class TriangleDAO implements CustomDAO<Triangle> {
 	/***
 	 * Déplacer un triangle
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void move(Triangle triangle, int a, int b) {

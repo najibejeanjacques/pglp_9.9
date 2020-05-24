@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DerbyDaoFactory extends DAOFactory {
-
+	
 	public static final String DBURL = "jdbc:derby:/home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/dessindb;user=jacques;password=Bonsoire2017";
 
 	/**
@@ -14,7 +14,9 @@ public class DerbyDaoFactory extends DAOFactory {
 	 * @throws SQLException
 	 */
 	public static Connection createConnection() throws SQLException {
-		Connection conn = DriverManager.getConnection(DBURL);
+
+		Connection conn = null;
+		conn = DriverManager.getConnection(DBURL);
 		return conn;
 
 	}

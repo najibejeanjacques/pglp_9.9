@@ -53,6 +53,7 @@ public enum DrawingApp {
 	 * @param args les arguments de la classe main
 	 */
 	public static void main(String args[]) {
+		
 		DrawingTUI drawingTui = new DrawingTUI();
 		drawingTui.init();
 		drawingTui.nextCommand();

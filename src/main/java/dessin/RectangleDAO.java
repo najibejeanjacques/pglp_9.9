@@ -12,6 +12,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/*****
 	 * Insertion d'un rectangle dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public int insertCustomer(Rectangle t) {
@@ -49,6 +50,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/*****
 	 * Supprimer un rectangle dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public boolean deleteCustomer(Rectangle t) {
@@ -59,6 +61,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/****
 	 * Mettre a jour un cercle dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void updateCustomer(Rectangle t) {
@@ -95,6 +98,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/***
 	 * Retrouver tous les rectangles dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public void findAllCustomer() {
 		// TODO Auto-generated method stub
@@ -137,6 +141,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/****
 	 * Trouver un rectangle a travers son nom
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public Rectangle finfByName(String name) {
@@ -185,6 +190,7 @@ public class RectangleDAO implements CustomDAO<Rectangle> {
 	/****
 	 * Deplacer un rectangle
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void move(Rectangle rectangle, int a, int b) {

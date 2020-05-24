@@ -15,6 +15,7 @@ public class graphiqueCompositeDAO implements CustomDAO<Graphique> {
 	/***
 	 * Inserer un groupe d'éléments graphique dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public int insertCustomer(Graphique t) {
@@ -47,6 +48,7 @@ public class graphiqueCompositeDAO implements CustomDAO<Graphique> {
 	 * @param uuid la référence uuid du groupe d'élément
 	 * @return la liste des noms des éléments graphiques présentes dans le groupe
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public List<String> getAllElement(String uuid) {
 		DerbyDaoFactory derby = new DerbyDaoFactory();
@@ -78,6 +80,7 @@ public class graphiqueCompositeDAO implements CustomDAO<Graphique> {
 	/***
 	 * Supprimer un groupe d'éléments graphique dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public boolean deleteCustomer(Graphique t) {
@@ -88,6 +91,7 @@ public class graphiqueCompositeDAO implements CustomDAO<Graphique> {
 	/***
 	 * Mettre a jour un groupe d'éléments graphique dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void updateCustomer(Graphique t) {
@@ -98,12 +102,14 @@ public class graphiqueCompositeDAO implements CustomDAO<Graphique> {
 	/***
 	 * Avoir la liste de tous les groupes d'éléments dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public void findAllCustomer() {
 		// TODO Auto-generated method stub
 
 	}
 
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public Graphique finfByName(String name) {
@@ -116,6 +122,7 @@ public class graphiqueCompositeDAO implements CustomDAO<Graphique> {
 	 * @param nomGroup nomGroup Le du group a rechercher
 	 * @return retourne l'uuid du groupe correspondant
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public String findGroupUUID(String nomGroup) {
 		DerbyDaoFactory derby = new DerbyDaoFactory();
@@ -146,6 +153,7 @@ public class graphiqueCompositeDAO implements CustomDAO<Graphique> {
 	 * @param nomGRoup Le nom du groupe, afin de vérifier son existence
 	 * @return return un boolean , sui est vrai si le groupe exist
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public boolean getExistGroup(String nomGRoup) {
 		DerbyDaoFactory derby = new DerbyDaoFactory();
@@ -178,6 +186,7 @@ public class graphiqueCompositeDAO implements CustomDAO<Graphique> {
 	 * @param nom  le nom du groupe
 	 * @param uuid l'identifiant du groupe
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public void insertGroup(String nom, String uuid) {
 		int result = 0;
@@ -201,6 +210,7 @@ public class graphiqueCompositeDAO implements CustomDAO<Graphique> {
 		}
 	}
 
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void move(Graphique t, int a, int b) {

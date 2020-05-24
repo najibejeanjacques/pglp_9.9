@@ -12,6 +12,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/**
 	 * Inserer un carre dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public int insertCustomer(Carre t) {
@@ -49,6 +50,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/***
 	 * Supprimer un Carré de la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public boolean deleteCustomer(Carre t) {
@@ -59,6 +61,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/***
 	 * Mettre a jour un Carre dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void updateCustomer(Carre t) {
@@ -92,6 +95,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/****
 	 * Retourner tous les carre de la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void findAllCustomer() {
@@ -136,6 +140,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/**
 	 * Retrouver un carre par son nom dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public Carre finfByName(String name) {
@@ -184,6 +189,7 @@ public class CarreDAO implements CustomDAO<Carre> {
 	/****
 	 * Déplacer un carre
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void move(Carre carre, int a, int b) {

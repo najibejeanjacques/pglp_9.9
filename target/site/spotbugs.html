@@ -66,7 +66,7 @@ exercice_9.9
 <th>Missing Classes</th></tr>
 <tr class="b">
 <td>31</td>
-<td>15</td>
+<td>12</td>
 <td>0</td>
 <td>1</td></tr></table></div>
 <div class="section">
@@ -76,74 +76,38 @@ exercice_9.9
 <th>Class</th>
 <th>Bugs</th></tr>
 <tr class="b">
-<td><a href="#dessin.CarreDAO">dessin.CarreDAO</a></td>
-<td>4</td></tr>
-<tr class="a">
 <td><a href="#dessin.DrawingTUI">dessin.DrawingTUI</a></td>
 <td>1</td></tr>
-<tr class="b">
+<tr class="a">
 <td><a href="#dessin.Group">dessin.Group</a></td>
 <td>1</td></tr>
-<tr class="a">
+<tr class="b">
 <td><a href="#dessin.Interpreter">dessin.Interpreter</a></td>
 <td>1</td></tr>
-<tr class="b">
-<td><a href="#dessin.Move">dessin.Move</a></td>
-<td>1</td></tr>
 <tr class="a">
+<td><a href="#dessin.Move">dessin.Move</a></td>
+<td>2</td></tr>
+<tr class="b">
 <td><a href="#dessin.Quit">dessin.Quit</a></td>
 <td>1</td></tr>
-<tr class="b">
+<tr class="a">
 <td><a href="#dessin.graphiqueCompositeDAO">dessin.graphiqueCompositeDAO</a></td>
 <td>1</td></tr>
-<tr class="a">
+<tr class="b">
 <td><a href="#dessinTest.TestCarre">dessinTest.TestCarre</a></td>
 <td>1</td></tr>
-<tr class="b">
+<tr class="a">
 <td><a href="#dessinTest.TestCercle">dessinTest.TestCercle</a></td>
 <td>1</td></tr>
-<tr class="a">
+<tr class="b">
 <td><a href="#dessinTest.TestDictionnaire">dessinTest.TestDictionnaire</a></td>
 <td>1</td></tr>
-<tr class="b">
+<tr class="a">
 <td><a href="#dessinTest.TestRectangle">dessinTest.TestRectangle</a></td>
 <td>1</td></tr>
-<tr class="a">
+<tr class="b">
 <td><a href="#dessinTest.TestTriangle">dessinTest.TestTriangle</a></td>
-<td>1</td></tr></table></div><a name="dessin.CarreDAO"></a>
-<div class="section">
-<h3><a name="dessin.CarreDAO"></a>dessin.CarreDAO</h3>
-<table border="0" class="bodyTable">
-<tr class="b">
-<th>Bug</th>
-<th>Category</th>
-<th>Details</th>
-<th>Line</th>
-<th>Priority</th></tr>
-<tr class="a">
-<td>Return value of new DerbyDaoFactory() ignored, but method has no side effect</td>
-<td>STYLE</td>
-<td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT</a></td>
-<td>103</td>
-<td>Medium</td></tr>
-<tr class="b">
-<td>Return value of new DerbyDaoFactory() ignored, but method has no side effect</td>
-<td>STYLE</td>
-<td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT</a></td>
-<td>148</td>
-<td>Medium</td></tr>
-<tr class="a">
-<td>Return value of new DerbyDaoFactory() ignored, but method has no side effect</td>
-<td>STYLE</td>
-<td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT</a></td>
-<td>21</td>
-<td>Medium</td></tr>
-<tr class="b">
-<td>Return value of new DerbyDaoFactory() ignored, but method has no side effect</td>
-<td>STYLE</td>
-<td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT</a></td>
-<td>67</td>
-<td>Medium</td></tr></table></div><a name="dessin.DrawingTUI"></a>
+<td>1</td></tr></table></div><a name="dessin.DrawingTUI"></a>
 <div class="section">
 <h3><a name="dessin.DrawingTUI"></a>dessin.DrawingTUI</h3>
 <table border="0" class="bodyTable">
@@ -203,17 +167,23 @@ exercice_9.9
 <td>MALICIOUS_CODE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#MS_PKGPROTECT">MS_PKGPROTECT</a></td>
 <td></td>
+<td>Medium</td></tr>
+<tr class="a">
+<td>Test de nullit&#xe9; redondant sur une valeur non nulle dans dessin.Move.execute()</td>
+<td>STYLE</td>
+<td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE</a></td>
+<td>63</td>
 <td>Medium</td></tr></table></div><a name="dessin.Quit"></a>
 <div class="section">
 <h3><a name="dessin.Quit"></a>dessin.Quit</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>dessin.Quit.execute() invoque System.exit(...), qui stoppe toute la JVM</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DM_EXIT">DM_EXIT</a></td>
@@ -222,13 +192,13 @@ exercice_9.9
 <div class="section">
 <h3><a name="dessin.graphiqueCompositeDAO"></a>dessin.graphiqueCompositeDAO</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Le nom de la classe dessin.graphiqueCompositeDAO ne commence pas par une majusucle</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#NM_CLASS_NAMING_CONVENTION">NM_CLASS_NAMING_CONVENTION</a></td>
@@ -237,13 +207,13 @@ exercice_9.9
 <div class="section">
 <h3><a name="dessinTest.TestCarre"></a>dessinTest.TestCarre</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Champ inutilis&#xe9; : dessinTest.TestCarre.dico</td>
 <td>PERFORMANCE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#UUF_UNUSED_FIELD">UUF_UNUSED_FIELD</a></td>
@@ -252,13 +222,13 @@ exercice_9.9
 <div class="section">
 <h3><a name="dessinTest.TestCercle"></a>dessinTest.TestCercle</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Champ inutilis&#xe9; : dessinTest.TestCercle.dico</td>
 <td>PERFORMANCE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#UUF_UNUSED_FIELD">UUF_UNUSED_FIELD</a></td>
@@ -267,13 +237,13 @@ exercice_9.9
 <div class="section">
 <h3><a name="dessinTest.TestDictionnaire"></a>dessinTest.TestDictionnaire</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Champ inutilis&#xe9; : dessinTest.TestDictionnaire.dico</td>
 <td>PERFORMANCE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#UUF_UNUSED_FIELD">UUF_UNUSED_FIELD</a></td>
@@ -282,13 +252,13 @@ exercice_9.9
 <div class="section">
 <h3><a name="dessinTest.TestRectangle"></a>dessinTest.TestRectangle</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Champ inutilis&#xe9; : dessinTest.TestRectangle.dico</td>
 <td>PERFORMANCE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#UUF_UNUSED_FIELD">UUF_UNUSED_FIELD</a></td>
@@ -297,13 +267,13 @@ exercice_9.9
 <div class="section">
 <h3><a name="dessinTest.TestTriangle"></a>dessinTest.TestTriangle</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Champ inutilis&#xe9; : dessinTest.TestTriangle.dico</td>
 <td>PERFORMANCE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#UUF_UNUSED_FIELD">UUF_UNUSED_FIELD</a></td>

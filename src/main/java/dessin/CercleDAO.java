@@ -13,6 +13,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 	/***
 	 * Insertion d'un cercle dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public int insertCustomer(Cercle t) {
 		// TODO Auto-generated method stub
@@ -43,6 +44,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 	/****
 	 * Suppression d'un cercle dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public boolean deleteCustomer(Cercle t) {
 		// TODO Auto-generated method stub
@@ -52,6 +54,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 	/***
 	 * Mise a jour d'un cercle dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public void updateCustomer(Cercle t) {
 		int result = 0;
@@ -78,6 +81,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 	/****
 	 * Retrouver tous les cercles dans la base de données
 	 */
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	public void findAllCustomer() {
 		// TODO Auto-generated method stub
@@ -111,6 +115,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 
 	}
 
+	@SuppressWarnings("static-access")
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public Cercle finfByName(String name) {
@@ -119,7 +124,8 @@ public class CercleDAO implements CustomDAO<Cercle> {
 		DerbyDaoFactory derby = new DerbyDaoFactory();
 		Cercle cercle = null;// = new Cercle(pointA, 0, "Test");
 		PreparedStatement prepare = null;
-		try (Connection connect = derby.createConnection()) {
+		try (@SuppressWarnings("static-access")
+		Connection connect = derby.createConnection()) {
 			try {
 				prepare = connect.prepareStatement("SELECT id, nom, rayon, coord1, coord2 FROM Cercle where nom = ?");
 				prepare.setString(1, name);
@@ -147,6 +153,7 @@ public class CercleDAO implements CustomDAO<Cercle> {
 		return cercle;
 	}
 
+	
 	@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
 	@Override
 	public void move(Cercle cercle, int a, int b) {
