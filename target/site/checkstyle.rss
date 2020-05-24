@@ -27,7 +27,7 @@ under the License.
     <item>
       <title>File: 31,
              Errors: 0,
-             Warnings: 3509,
+             Warnings: 3557,
              Infos: 0
       </title>
             <link>${project.url}/checkstyle.html</link>
@@ -52,7 +52,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  58
+                  59
                 </td>
                 <td>
                   0
@@ -94,7 +94,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  336
+                  343
                 </td>
                 <td>
                   0
@@ -136,7 +136,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  259
+                  266
                 </td>
                 <td>
                   0
@@ -164,7 +164,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  322
+                  333
                 </td>
                 <td>
                   0
@@ -214,6 +214,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#dessin.GraphiqueComposite.java">dessin/GraphiqueComposite.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  39
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#dessin.Command.java">dessin/Command.java</a>
                 </td>
                 <td>
@@ -249,20 +263,6 @@ under the License.
                 </td>
                 <td>
                   103
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#dessin.graphiqueComposite.java">dessin/graphiqueComposite.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  40
                 </td>
                 <td>
                   0
@@ -318,7 +318,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  85
+                  82
                 </td>
                 <td>
                   0
@@ -346,7 +346,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  13
+                  19
                 </td>
                 <td>
                   0
@@ -374,7 +374,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  48
+                  54
                 </td>
                 <td>
                   0
@@ -388,7 +388,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  326
+                  331
                 </td>
                 <td>
                   0
@@ -402,7 +402,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  92
+                  94
                 </td>
                 <td>
                   0
@@ -416,7 +416,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  330
+                  337
                 </td>
                 <td>
                   0

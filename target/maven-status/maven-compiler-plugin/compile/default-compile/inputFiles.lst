@@ -6,7 +6,6 @@
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessinTest/TestTriangle.java
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/Point.java
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessinTest/TestRectangle.java
-/home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/graphiqueComposite.java
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/DAOFactory.java
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/CercleDAO.java
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/RectangleDAO.java
@@ -27,5 +26,6 @@
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/DictionnaireRegex.java
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/Graphique.java
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/Cercle.java
+/home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/GraphiqueComposite.java
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/Carre.java
 /home/ouedraogo/Documents/eclipse-workspace/exercice_9.9/src/main/java/dessin/Help.java
